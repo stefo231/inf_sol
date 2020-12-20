@@ -18,13 +18,7 @@ import {
   Card,
 } from "@material-ui/core";
 
-import {
-  ArrowBack,
-  AssignmentInd,
-  Home,
-  Apps,
-  ContactMail,
-} from "@material-ui/icons";
+import { ArrowBack, Home, PostAdd } from "@material-ui/icons";
 import avatar from "../images/avatar.jpg";
 import logo from "../images/zdravkov_stefan_logo.png";
 import Footer from "./Footer";
@@ -32,12 +26,12 @@ import Footer from "./Footer";
 //CSS STYLES
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    background: "#354649",
+    background: "#d1e8e2",
   },
   manuSliderContainer: {
     width: "auto",
     height: "100%",
-    background: "#354649",
+    background: "#d1e8e2",
   },
   avatar: {
     display: "block",
@@ -46,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13),
   },
   listItem: {
-    color: "#E0E7E9",
+    color: "#2c3531",
   },
 }));
 
@@ -57,19 +51,9 @@ const menuItems = [
     listPath: "/",
   },
   {
-    listIcon: <AssignmentInd />,
-    listText: "Resume",
-    listPath: "/resume",
-  },
-  {
-    listIcon: <Apps />,
-    listText: "Portfolio",
-    listPath: "/portfolio",
-  },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contacts",
-    listPath: "/contacts",
+    listIcon: <PostAdd />,
+    listText: "Blogposts",
+    listPath: "/blogposts",
   },
 ];
 
