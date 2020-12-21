@@ -66,7 +66,7 @@ app.get("/blogposts/edit/:id", blogposts.viewEditBlogpost); //done
 app.post("/blogposts/edit/:id", blogposts.apiEditBlogpost); //done
 app.get("/blogposts/delete/:id", blogposts.apiDeleteBlogpost); //done
 
-app.listen(8080, (err) => {
+app.listen(3000, (err) => {
   if (err) {
     console.error(err);
     return;
